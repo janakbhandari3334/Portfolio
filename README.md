@@ -1,1 +1,276 @@
 # Portfolio
+
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>   Janak Bhandari | Portfolio</title>
+
+<style>
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BACKGROUND */
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: #dde4e4;
+    color: #060101;
+    overflow-x: hidden;
+}
+
+/* FLOATING BACKGROUND */
+.bg {
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+}
+
+.circle {
+    position: absolute;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.04);
+    animation: float 28s infinite ease-in-out;
+}
+
+.circle:nth-child(1) { width: 300px; height: 300px; top: 10%; left: 5%; }
+.circle:nth-child(2) { width: 200px; height: 200px; top: 60%; left: 15%; animation-duration: 32s; }
+.circle:nth-child(3) { width: 350px; height: 350px; top: 30%; left: 70%; animation-duration: 36s; }
+.circle:nth-child(4) { width: 250px; height: 250px; top: 75%; left: 75%; animation-duration: 30s; }
+
+@keyframes float {
+    0%,100% { transform: translateY(0); }
+    50% { transform: translateY(-60px); }
+}
+
+/* LAYOUT */
+section {
+    padding: 80px 12%;
+    position: relative;
+}
+
+/* TEXT */
+h1 { font-size: 46px; margin-bottom: 15px; }
+h2 { font-size: 32px; margin-bottom: 20px; }
+h3 { font-size: 20px; margin-bottom: 6px; }
+p { font-size: 18px; line-height: 1.7; max-width: 850px; }
+
+/* HERO */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 50px;
+    position: relative;
+    min-height: 700px;
+    padding: 60px 0;
+}
+
+.hero::before {
+    content: "";
+    background: url("https://i.ibb.co/2YNKQXgS/IMG-1770.jpg") no-repeat center/cover;
+    position: absolute;
+    inset: -0px;
+    opacity: 0.15;
+    z-index: -1;
+    border-radius: 30px;
+}
+
+.hero-content {
+    max-width: 800px;
+}
+
+.role {
+    font-size: 20px;
+    color: #043742;
+    margin: 10px 0 20px;
+}
+
+/* BUTTON */
+.button {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 14px 32px;
+    background: #111827;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 30px;
+    font-size: 17px;
+}
+
+/* GRID BOXES */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 30px;
+}
+
+.box {
+    background: rgba(5, 161, 135, 0.056);
+    backdrop-filter: blur(4px);
+    padding: 25px;
+    border-radius: 14px;
+}
+
+/* TOOLS GRID */
+.tools-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 8px;
+    margin-top: 10px;
+}
+
+.tool {
+    font-size: 16px;
+}
+
+/* PROJECT */
+.project span {
+    font-size: 16px;
+    color: #4b5563;
+}
+
+/* SOCIAL */
+.socials {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.socials a {
+    padding: 10px 14px;
+    border-radius: 8px;
+    background: #fff;
+    color: #111827;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.socials a:hover {
+    transform: translateY(-3px);
+    box-shadow: 3px 5px 15px rgba(0,0,0,0.2);
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 40px;
+    font-size: 15px;
+    color: #6b7280;
+}
+
+/* RESPONSIVE */
+@media (max-width: 1024px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+    .hero-content { max-width: 100%; }
+}
+</style>
+</head>
+
+<body>
+
+<!-- BACKGROUND -->
+<div class="bg">
+    <div class="circle"></div>
+    <div class="circle"></div>
+</div>
+
+<!-- HERO -->
+<section class="hero">
+    <div class="hero-content">
+        <h1>  Introduction </h1>
+        <div class="role"> Hello, I am Janak Bhandari, a 22-year-old .Currently pursuing my 
+ Bachelor of Computer Applications (BCA) at New Horizon College. 
+ I completed my schooling at Balkalyan Secondary School and 
+ my Pre-University Course (PUC) from the same institution where I am pursuing my degree...
+
+
+  Apart from academics, I am passionate about acting and video editing, which I actively 
+ engage in. My long-term goal is to become a successful entrepreneur and investor.
+ With a strong belief in continuous learning and adaptability, I aim to leverage
+ my technical skills and creative mindset to achieve my ambitions.
+
+
+ I follow Hinduism and believe in values that drive personal and professional growth.
+ I am currently single and focused on building my career. </div>
+        <p>
+
+        </p>
+        <a href="https://drive.google.com/file/d/1t13uotzORqGdKzZydExxbdK_hFL09O1O/view?usp=drivesdk" class="button">Download Resume</a>
+    </div>
+</section>
+
+<!-- TECHNOLOGIES -->
+<section>
+    <h2>Technologies</h2>
+    <div class="grid">
+        <div class="box"><h3>Languages</h3><p>C, C++, Python, Java, JavaScript, SQL</p></div>
+        <div class="box"><h3>Web</h3><p>HTML, CSS, JavaScript</p></div>
+        <div class="box"><h3>Data</h3><p>Machine Learning, Data Analytics</p></div>
+        <div class="box"><h3>Tools</h3><p>Git, GitHub, VS Code</p></div>
+    </div>
+</section>
+
+<!-- INTERNSHIP -->
+<section>
+    <h2>Internship</h2>
+    <div class="box">
+        <h3>Full-Stack Web Development</h3>
+        <p>
+            Worked on Prodigy InfoTech, debugging, documentation, and teamwork.
+            Gained exposure to project execution and professional workflows.
+        </p>
+    </div>
+</section>
+
+<!-- PROJECTS -->
+<section>
+    <h2>Projects</h2>
+    <div class="box project">
+        <h3>Task Manager Web App</h3>
+        <p>
+            A web application where users can sign up, create, update, delete,
+            and organize tasks. The app has user authentication, database storage,
+            and interactive UI. It demonstrates end-to-end full stack development skills.
+        </p>
+        <h3>Tools & Technologies Used</h3>
+        <div class="tools-grid">
+            <div class="tool">Front-End: React.js, Tailwind CSS / Bootstrap</div>
+            <div class="tool">Back-End: Node.js, Express.js</div>
+            <div class="tool">Auth & Security: JWT, bcrypt, CORS</div>
+            <div class="tool">Database: MongoDB / PostgreSQL</div>
+            <div class="tool">Deployment: Heroku / Vercel / Netlify</div>
+        </div>
+    </div>
+</section>
+
+<!-- SOCIALS -->
+<section>
+    <h2>Connect With Me</h2>
+    <div class="socials">
+        <a href="https://linkedin.com/in/janakbhandari2003/" target="_blank">LinkedIn</a>
+        <a href="https://github.com/janakbhandari3334" target="_blank">GitHub</a>
+        <a href="mailto:janakbhandari3334@gmail.com">Email</a>
+        <a href="https://facebook.com/janak.oct3" target="_blank">Facebook</a>
+        <a href="https://instagram.com/janak_oct3" target="_blank">Instagram</a>
+        <a href="https://youtube.com/@janak_bhandari" target="_blank">YouTube</a>
+        <a href="https://x.com/janak_oct3" target="_blank">X</a>
+        <a href="https://snapchat.com/janak.nov2/" target="_blank">SnapChat</a>
+    </div>
+</section>
+
+<footer>
+    © 2026 Janak Bhandari
+</footer>
+
+</body>
+</html>
